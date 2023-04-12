@@ -1,0 +1,33 @@
+
+{{>header}}
+
+<section class="product">
+	<div class="product__photo">
+		<div class="photo-container">
+			<div class="photo-main">
+				<div class="controls">
+					<i class="material-icons">share</i>
+					<i class="material-icons">favorite_border</i>
+				</div>
+				<img src="{{data.image}}" alt="green apple slice">
+			</div>
+		</div>
+	</div>
+	<div class="product__info">
+		<div class="title">
+			<h1>{{data.title}}</h1>
+			<span>COD: {{data.id}}</span>
+		</div>
+		<div class="price">
+			R$ <span>{{data.price}}</span>
+		</div>
+		<div class="description">
+			<h3>Category</h3>
+			<span>{{data.category}}</span>
+		</div>
+		<button class="buy--btn">ADD TO CART</button>
+	</div>
+</section>
+
+</body>
+</html>

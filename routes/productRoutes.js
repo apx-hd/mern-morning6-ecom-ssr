@@ -53,7 +53,8 @@ router.get("/:productID", (req, res) => {
   const { productID } = req.params;
   //Typecasting to number as params is string by default
   if (Number(productID) >= 1 && Number(productID) <= productData.length) {
-    res.json(productData[productID - 1]);
+    // res.json(productData[productID - 1]);
+    res.render('details', {title: "Ecommerce", data: productData[productID - 1]})
   } else {
     res.send("Invalid URL");
   }

@@ -1,7 +1,8 @@
 <html>
   <head>
     <title>Doko Online Store</title>  
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/css/details.css">
   </head>
   <body>
 <nav class="product-filter">
@@ -37,21 +38,3 @@
     </div>
   </div>
 </nav>
-
-<section class="products">
-    {{#each newProductData}}
-  <div class="product-card">
-    <a href="/products/{{this.id}}">
-    <div class="product-image">
-      <img src="{{this.image}}">
-    </div>
-    <div class="product-info">
-      <h5>{{this.title}}</h5>
-      <h6>${{this.price}}</h6>
-    </div>
-  </a>
-  </div>
-  {{/each}}
-</section>
-</body>
-</html>

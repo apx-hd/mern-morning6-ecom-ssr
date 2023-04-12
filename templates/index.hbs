@@ -1,0 +1,20 @@
+{{!-- Importing partials --}}
+{{>header}}
+
+<section class="products">
+    {{#each newProductData}}
+  <div class="product-card">
+    <a href="/products/{{this.id}}">
+    <div class="product-image">
+      <img src="{{this.image}}">
+    </div>
+    <div class="product-info">
+      <h5>{{this.title}}</h5>
+      <h6>${{this.price}}</h6>
+    </div>
+  </a>
+  </div>
+  {{/each}}
+</section>
+</body>
+</html>
